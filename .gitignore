@@ -9,3 +9,11 @@ books.org
 *.spec
 build/
 dist/
+
+
+# emacs
+*~
+
+# nix
+.direnv
+result

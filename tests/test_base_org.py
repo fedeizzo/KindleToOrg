@@ -1,6 +1,6 @@
 #!/usr/bin/env ipython
 
-from base_org import *
+from kindletoorg.base_org import *
 from orgparse import loads as org_loads
 
 

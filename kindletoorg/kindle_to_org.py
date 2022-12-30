@@ -26,8 +26,8 @@ from typing import (
 )
 from shutil import copyfile
 
-from base_org import BaseOrg, EmacsDateTime, EmacsDate, Todo, Progress
-from static import (
+from kindletoorg.base_org import BaseOrg, EmacsDateTime, EmacsDate, Todo, Progress
+from kindletoorg.static import (
     AuthorName,
     BookTitle,
     LocationRange,
@@ -38,7 +38,7 @@ from static import (
     Series,
     KINDLE_SEPARATOR,
 )
-from utility_functions import roman_to_float, utf8
+from kindletoorg.utility_functions import roman_to_float, utf8
 
 
 class AType(Enum):
@@ -575,7 +575,9 @@ def page_or_location(s: str) -> Union[PageRange, LocationRange]:
     return range_
 
 
-def get_title_author_series(s: str,) -> Tuple[BookTitle, AuthorName, Optional[Series]]:
+def get_title_author_series(
+    s: str,
+) -> Tuple[BookTitle, AuthorName, Optional[Series]]:
     # Match everything until parentheses, or until end
     author: Optional[AuthorName] = None
     series: Optional[Series] = None

@@ -9,8 +9,8 @@ from hashlib import md5
 from orgparse.node import OrgNode
 from typing import Type, TypeVar, Optional, List, Dict, Any, Set, Tuple
 
-from static import EMACS_DATE, KINDLE_TIME, EMACS_TIME
-from utility_functions import head, utf8
+from kindletoorg.static import EMACS_DATE, KINDLE_TIME, EMACS_TIME
+from kindletoorg.utility_functions import head, utf8
 
 
 Y = TypeVar("Y", bound="EmacsDateTime")

@@ -1,8 +1,8 @@
 #!/usr/bin/env ipython
 
-from kindle_to_org import *
-from base_org import *
-from static import *
+from kindletoorg.kindle_to_org import *
+from kindletoorg.base_org import *
+from kindletoorg.static import *
 from pprint import pprint
 
 test_sections = """The Lord of the Rings (J. R. R. Tolkien)
